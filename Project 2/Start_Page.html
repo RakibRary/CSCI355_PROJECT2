@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <meta charset="UTF-8">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">         
+</head>
+<style>
+
+@font-face {
+    font-family: 'Bitwise';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Bitwise'), url('https://fonts.cdnfonts.com/s/6817/bitwise.woff') format('woff');
+}   
+body{
+     background-color: black;
+     font-size: 20px;
+     font-family: 'Bitwise', sans-serif;    
+     justify-content: center;
+   align-items: center;                                    
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  
+}
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #14626c, 0 0 40px #14626c, 0 0 50px #14626c, 0 0 60px #14626c, 0 0 70px #14626c;
+  }
+
+  to { text-shadow: 0 0 20px #fff, 0 0 30px #24727c, 0 0 40px #24727c, 0 0 50px #24727c, 0 0 60px #24727c, 0 0 70px #24727c, 0 0 80px #24727c;
+  }
+}
+
+.glow5 {
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  animation: glow5 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow5 {
+  from {   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px orange, 0 0 40px orange, 0 0 50px orange, 0 0 60px orange, 0 0 70px orange;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px orange , 0 0 40px orange, 0 0 50px orange, 0 0 60px orange, 0 0 70px orange, 0 0 80px orange;
+  }
+}
+
+li a:hover{
+    background-color: grey  ;
+    box-shadow: 0 5px 15px grey;
+  }
+
+
+div{
+    color: teal;
+    text-align: center;
+    font-size:55px;
+}
+
+.footer {
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  height: 90px;
+  background-color: black;
+}
+
+.button-container {
+    width: auto;
+    background: black;
+    overflow-y: auto;
+}
+
+.button-container > a {
+    width: 300px;
+    height: 200px;
+    float: center;
+    background: black;   
+    margin: 15px;
+    text-align:20px 20px;
+}
+.button{
+  background-color:black;
+  border: 5px solid white;
+  color:silver;
+  font-size: 24px;
+  text-align: center;
+  display:inline-block;
+  padding:32px 32px;
+  
+}
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple button {
+  position: relative;
+  overflow: hidden;
+  background-color: grey;
+  color: #fff;
+  border: none;
+  padding: 16px 32px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.ripple button:after {
+  content: "";
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  transform: scale(0);
+  transition: all 0.5s ease-out;
+  top: 50%;
+  left: 50%;
+  margin-left: -25px;
+  margin-top: -25px;
+  pointer-events: none;
+}
+
+.ripple button:focus:after,
+.ripple button:active:after {
+  transform: scale(2);
+  opacity: 0;
+}
+
+</style>
+<body>
+
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+<div class="glow">
+DRONE SHOP
+</div>
+       <div1>
+         <div class="button-container">
+              <a href="Home.html" class="button" style="text-decoration:none">
+                <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="white" class="bi bi-airplane-engines-fill" viewBox="0 0 16 16">
+                  <path d="M8 0c-.787 0-1.292.592-1.572 1.151A4.347 4.347 0 0 0 6 3v3.691l-2 1V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.191l-1.17.585A1.5 1.5 0 0 0 0 10.618V12a.5.5 0 0 0 .582.493l1.631-.272.313.937a.5.5 0 0 0 .948 0l.405-1.214 2.21-.369.375 2.253-1.318 1.318A.5.5 0 0 0 5.5 16h5a.5.5 0 0 0 .354-.854l-1.318-1.318.375-2.253 2.21.369.405 1.214a.5.5 0 0 0 .948 0l.313-.937 1.63.272A.5.5 0 0 0 16 12v-1.382a1.5 1.5 0 0 0-.83-1.342L14 8.691V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v.191l-2-1V3c0-.568-.14-1.271-.428-1.849C9.292.591 8.787 0 8 0Z"/>
+                </svg>
+              </p>
+              <div class="ripple">
+                <button>CLICK ME</button>
+              </div>
+              </a>
+            </div>
+            
+     
+       </div1>  
+
+
+       <br></br>
+       <br></br>
+       <br></br>
+       <br></br>
+       <div class = "footer">
+        <p>Copyright © 2023 <br> Rakib Rary, Shailesh Ghale, Djiedjom Gbonkou</p>
+       </div>
+       </body> 
+       </html>

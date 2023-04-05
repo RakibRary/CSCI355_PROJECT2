@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <meta charset="UTF-8">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+	<script src="Contact_js.js"></script>      
+</head>
+<style>
+
+@font-face {
+    font-family: 'Bitwise';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Bitwise'), url('https://fonts.cdnfonts.com/s/6817/bitwise.woff') format('woff');
+}   
+body{
+     background-color: black;
+     font-size: 20px;
+     font-family: 'Bitwise', sans-serif;    
+     justify-content: center;
+   align-items: center;                                    
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  
+}
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #14626c, 0 0 40px #14626c, 0 0 50px #14626c, 0 0 60px #14626c, 0 0 70px #14626c;
+  }
+
+  to { text-shadow: 0 0 20px #fff, 0 0 30px #24727c, 0 0 40px #24727c, 0 0 50px #24727c, 0 0 60px #24727c, 0 0 70px #24727c, 0 0 80px #24727c;
+  }
+}
+
+li a:hover{
+    background-color: grey  ;
+    box-shadow: 0 5px 15px grey;
+  }
+
+
+.footer {
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  height: 90px;
+  background-color: black;
+  text-align: center;
+
+}
+
+.card-container {
+  margin: 50px auto;
+  max-width: 600px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.form-row label {
+  flex-basis: 30%;
+  font-weight: bold;
+}
+
+.form-row input,
+.form-row textarea {
+  flex: 1;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+  outline: none;
+  border-bottom: 2px solid black;
+}
+
+.submit-button {
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.submit-button input[type="submit"] {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button input[type="submit"]:hover {
+  background-color: GREY;
+}
+.slidecontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 90%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+</style>
+
+<body>
+	<nav>   
+		<ul style="list-style:none; margin:0; padding:0; text-align:center; background-color: black;">
+			<li style="display: inline">           
+				<a style= "display:inline-block; padding:10px; color: white; text-align: center; padding: 14px 16px; text-decoration:none;" href="Home.html">Home</a>
+			</li>
+			<li style="display: inline">
+				<a style= "display:inline-block; padding:10px; color: white; text-align: center; padding: 14px 16px; text-decoration:none;" href="Shop.html">Shop</a>          
+			</li>
+			<li style="display: inline">
+				<a style= "display:inline-block; padding:10px; color: white; text-align: center; padding: 14px 16px; text-decoration:none;" href="Services.html">About</a>
+			</li>
+			<li style="display: inline">
+				<a style= "display:inline-block; padding:10px; color: white; text-align: center; padding: 14px 16px; text-decoration:none;" href="Contact.html">Contact</a>
+			</li>
+		  </ul>
+	</nav>
+<div class="glow">
+DRONE SHOP
+</div>
+<br></br>
+<br></br>
+<div style="color: #fff; font-size: 48px; text-align: center;">
+  CONTACT FORM
+</div>
+
+<div class="card-container">
+  <form action="submit-form.php" method="post">
+    <div class="form-row">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="form-row">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-row">
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone" required>
+    </div>
+
+    <div class="form-row">
+      <label for="drone_serial">Drone Serial #</label>
+      <input type="text" id="drone_serial" name="drone_serial" required>
+    </div>
+
+    <div class="form-row">
+      <label for="issue">Issue</label>
+      <textarea id="issue" name="issue" rows="4" cols="30" required></textarea>
+    </div>
+
+    <div class="form-row submit-button">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+<p style="color: white; font-size: 28px; text-align: center;">
+	Services and repairs varies depending on the drone model and severeity of case.
+	<br>
+	Please submit a service form above, and allow 3-5 business days for our team to 
+	<br>
+   contact you. Our customer's experience is our number one priority in ensuring 
+   <br>
+   success. 
+   <br>
+   Phone Number:999-999-9999
+   <br>
+   Email: droneshop@gmail.com
+</p> 
+
+<img src="images/DJI_0463.JPG" id="my-image" alt="" width="800" height="500" style="display: block; margin: auto;" >
+<p style="color: white; font-size: 28px; text-align: center;">
+	Rate the image of Queens College!!!
+</p> 
+<div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50">
+</div>
+       <br></br>
+       <br></br>
+       <br></br>
+       <br></br>
+
+	   <div class="footer" style="font-size: 20px; color: white;">
+		<p>Copyright © 2023 <br> Rakib Rary, Shailesh Ghale, Djiedjom Gbonkou</p>
+	 </div>
+       </body> 
+       </html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <meta charset="UTF-8">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+	<script src="Services_js.js"></script>      
+</head>
+
+<style>
+@font-face {
+    font-family: 'Bitwise';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Bitwise'), url('https://fonts.cdnfonts.com/s/6817/bitwise.woff') format('woff');
+}   
+body{
+     background-color: black;
+     font-size: 20px;
+     font-family: 'Bitwise', sans-serif;    
+     justify-content: center;
+   align-items: center;                                    
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  
+}
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #14626c, 0 0 40px #14626c, 0 0 50px #14626c, 0 0 60px #14626c, 0 0 70px #14626c;
+  }
+
+  to { text-shadow: 0 0 20px #fff, 0 0 30px #24727c, 0 0 40px #24727c, 0 0 50px #24727c, 0 0 60px #24727c, 0 0 70px #24727c, 0 0 80px #24727c;
+  }
+}
+
+li a:hover{
+    background-color: grey  ;
+    box-shadow: 0 5px 15px grey;
+  }
+
+.footer {
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  height: 90px;
+  background-color: black;
+  text-align: center;
+}
+
+img {
+        display: block;
+        margin: auto;
+        
+      }
+
+  #my-image {
+  filter: blur(20px); 
+  opacity: 1; 
+  transition: filter 1s, opacity 1s; 
+}
+</style>
+
+<body>
+	<nav>   
+		<ul style="list-style:none; margin:0; padding:0; text-align:center; background-color: black;">
+			<li style="display: inline">           
+				<a style= "display:inline-block; padding:10px; color: white; text-align: center; padding: 14px 16px; text-decoration:none;" href="Home.html">Home</a>
+			</li>
+			<li style="display: inline">
+				<a style= "display:inline-block; padding:10px; color: white; text-align: center; padding: 14px 16px; text-decoration:none;" href="Shop.html">Shop</a>          
+			</li>
+			<li style="display: inline">
+				<a style= "display:inline-block; padding:10px; color: white; text-align: center; padding: 14px 16px; text-decoration:none;" href="Services.html">About</a>
+			</li>
+			<li style="display: inline">
+				<a style= "display:inline-block; padding:10px; color: white; text-align: center; padding: 14px 16px; text-decoration:none;" href="Contact.html">Contact</a>
+			</li>
+		  </ul>
+	</nav>
+<div class="glow">
+DRONE SHOP
+</div>
+<br></br>
+<br></br>
+<img src="images/about_image.jpg" alt="about_image is missing">
+
+<p style="color: white; font-size: 28px; text-align: center;">
+  Hello! welcome to our CSCI 355 project 2 where we are hosting our drone shop
+	<br>
+	We are dedicated to providing our customers drones for a variety of purposes. 
+	<br>
+  Our team based in New York City find inovative ways to use drones and as a hobby,
+     <br>
+  and we hope our customer do as well. Thank you for visting our website!
+</p> 
+<br></br>
+<br></br>
+
+<div style="color: #fff; font-size: 48px; text-align: center;">
+  CHECK OUT OUR MOST EXSPESIVE DRONE DOWN BELOW
+</div>
+
+<img src="images/exspensive.webp" id="my-image" alt="about_image is missing" width="500" height="300" >
+
+       <br></br>
+       <br></br>
+       <br></br>
+       <br></br>
+	   <div class="footer" style="font-size: 20px; color: white;">
+		<p>Copyright © 2023 <br> Rakib Rary, Shailesh Ghale, Djiedjom Gbonkou</p>
+	 </div>
+       </body> 
+       </html>
